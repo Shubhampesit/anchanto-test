@@ -1,12 +1,21 @@
-import { enableProdMode } from '@angular/core';
+import 'zone.js';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { MainModule } from './main/main.module'
 
-import { AppModule } from './app/app.module';
-import { environment } from './environments/environment';
+platformBrowserDynamic()
+  .bootstrapModule(MainModule)
+  .catch((err) => console.error(err));
 
-if (environment.production) {
-  enableProdMode();
-}
-
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+// bootstrapApplication(TranslateWrapperComponent,{
+//   providers: [
+//         importProvidersFrom(HttpClientModule),
+//         importProvidersFrom(TranslateModule.forRoot({
+//           defaultLanguage: 'en',
+//             loader: {
+//                 provide: TranslateLoader,
+//                 useFactory: HttpLoaderFactory,
+//                 deps: [HttpClient]
+//            }
+//         }),
+//     ]
+// });

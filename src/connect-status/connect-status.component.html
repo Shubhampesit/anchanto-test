@@ -1,0 +1,6 @@
+<div *ngIf="isConnected">
+    {{ 'INTERNET_CONNECTIVITY_STATUS_CONNECTED' | translate }}
+  </div>
+  <div *ngIf="!isConnected">
+    {{ 'INTERNET_CONNECTIVITY_STATUS_NOT_CONNECTED' | translate }}
+  </div>

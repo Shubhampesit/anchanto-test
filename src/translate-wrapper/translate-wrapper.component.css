@@ -1,0 +1,13 @@
+.custom-dropdown {
+    /* position: relative; */
+    display: flex;
+  }
+  
+  .select-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+
+  .status{
+    padding-left: 1rem;
+  }

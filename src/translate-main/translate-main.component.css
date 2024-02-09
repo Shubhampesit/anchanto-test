@@ -1,0 +1,13 @@
+.english{
+    display: flex;
+}
+
+.arabic{
+    flex-direction: column;
+    display: flex;
+}
+
+.hebrew{
+    flex-direction: row;
+    display: flex;
+}

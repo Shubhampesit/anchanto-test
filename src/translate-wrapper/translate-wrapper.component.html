@@ -1,0 +1,19 @@
+<div class="custom-dropdown" (click)="toggleDropdown()">
+  <label for="language">Select Language:</label>
+  <div class="select-wrapper">
+    <select id="language" [(ngModel)]="selectedLanguage" (change)="languageSelectionHandler(selectedLanguage)">
+      <option *ngFor="let language of languages" [value]="language">
+        {{ language }}
+      </option>
+    </select>
+  </div>
+  <div class="status">
+    <app-connect-status></app-connect-status>
+  </div>
+</div>
+
+<div *ngIf="selectedLanguage">
+  <p>Content for {{ selectedLanguage }} will appear here.</p>
+</div>
+
+<app-translate-main></app-translate-main>

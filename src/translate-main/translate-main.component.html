@@ -1,0 +1,16 @@
+<div [ngClass]="language">
+  <div>
+    {{ 'THIS_IS_A_ENGLISH_TRANSLATION' | translate }}
+  </div>
+  <div>
+    {{ 'THIS_IS_GENERAL_INFO' | translate }}
+  </div>
+</div>
+
+
+<!-- <ng-container [ngSwitch]="language">
+    <div *ngSwitchCase="'english'" class="english"></div>
+    <div *ngSwitchCase="'arabic'" class="arabic">something</div>
+    <div *ngSwitchCase="'hebrew'" >something</div>
+    <div *ngSwitchCase="'spanish'">something</div>
+  </ng-container> -->
